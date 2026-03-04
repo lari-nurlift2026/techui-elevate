@@ -9,9 +9,10 @@ const Navbar = () => {
 
   const navItems = [
     { label: t("nav.home"), href: "#home" },
-    { label: t("nav.services"), href: "#serviços" },
-    { label: t("nav.about"), href: "#sobre-nós" },
-    { label: t("nav.contact"), href: "#recursos" },
+    { label: t("nav.services"), href: "#solucoes" },
+    { label: t("nav.about"), href: "#sobre" },
+    { label: t("nav.partners"), href: "#parceiros" },
+    { label: t("nav.contact"), href: "#contato" },
   ];
 
   const toggleLang = () => {

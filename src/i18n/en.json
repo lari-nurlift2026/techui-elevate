@@ -1,8 +1,9 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
-    "about": "About Us",
+    "services": "Solutions",
+    "about": "About",
+    "partners": "Partners",
     "contact": "Contact"
   },
   "hero": {
