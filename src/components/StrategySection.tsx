@@ -3,68 +3,71 @@ import { motion } from "framer-motion";
 const steps = [
   {
     title: "Diagnóstico",
-    description: "Análise profunda do cenário atual, oportunidades de mercado e posicionamento competitivo no Brasil.",
+    description: "Mapeamos mercado, stack atual, gaps e oportunidades com dados reais.",
   },
   {
-    title: "Estratégia",
-    description: "Planejamento customizado com roadmap de execução, métricas e milestones de crescimento.",
+    title: "Arquitetura",
+    description:
+      "Estruturamos a base operacional ideal, conectando ferramentas, processos e pessoas para criar uma operação eficiente, escalável e orientada a resultados.",
   },
   {
     title: "Execução",
-    description: "Implementação ágil com squads dedicados, sprints de duas semanas e reports semanais de progresso.",
+    description: "Implementamos com equipe local, integrações e KPIs desde o dia um.",
   },
   {
     title: "Escala",
-    description: "Otimização contínua, expansão de canais e aceleração de resultados com inteligência de dados.",
+    description:
+      "Refinamos continuamente a operação por meio de automação estratégica e inteligência orientada por dados, aplicando tecnologia de forma criteriosa para gerar eficiência real, decisões mais precisas e evolução consistente da performance.",
   },
 ];
 
 const StrategySection = () => {
   return (
-    <section id="sobre-nós" className="py-32 relative">
-      <div className="glow-line w-full mb-32" />
-
+    <section className="py-32 bg-muted/30">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-6"
         >
-          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">Processo</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wider"
+          <h2
+            className="font-heading text-4xl md:text-5xl font-bold tracking-wider"
             style={{ color: "hsl(var(--text-heading))" }}
           >
-            Da Estratégia à Escala
+            Da estratégia à escala
           </h2>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto space-y-8">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center text-muted-foreground mb-20 max-w-2xl mx-auto"
+        >
+          Um framework validado em 4 etapas para eliminar incerteza e acelerar resultados.
+        </motion.p>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
           {steps.map((step, i) => (
             <motion.div
               key={step.title}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="glass-card-hover rounded-xl p-10 relative overflow-hidden"
+              transition={{ delay: i * 0.12 }}
+              className="flex flex-col gap-3"
             >
-              {/* Giant background number */}
-              <span className="step-number absolute top-1/2 -translate-y-1/2 -left-2 text-[160px] leading-none select-none pointer-events-none">
+              <span className="font-heading text-5xl md:text-6xl font-bold text-primary/20">
                 {String(i + 1).padStart(2, "0")}
               </span>
-
-              <div className="relative z-10 ml-16 md:ml-24">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-                  <h3 className="font-heading text-2xl font-semibold uppercase tracking-wide"
-                    style={{ color: "hsl(var(--text-heading))" }}
-                  >
-                    {step.title}
-                  </h3>
-                </div>
-                <p className="text-foreground leading-relaxed max-w-xl">{step.description}</p>
-              </div>
+              <h3
+                className="font-heading text-xl font-semibold uppercase tracking-wide"
+                style={{ color: "hsl(var(--text-heading))" }}
+              >
+                {step.title}
+              </h3>
+              <p className="text-foreground text-sm leading-relaxed">{step.description}</p>
             </motion.div>
           ))}
         </div>
