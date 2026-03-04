@@ -23,8 +23,8 @@ const steps = [
 
 const StrategySection = () => {
   return (
-    <section className="py-32 section-gradient-alt">
-      <div className="container mx-auto px-6">
+    <section className="py-24 section-light">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ const StrategySection = () => {
         >
           <h2
             className="font-heading text-4xl md:text-5xl font-bold tracking-wider"
-            style={{ color: "hsl(var(--text-heading))" }}
+            style={{ color: "hsl(var(--section-light-heading))" }}
           >
             Da estratégia à escala
           </h2>
@@ -43,7 +43,8 @@ const StrategySection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center mb-20 max-w-2xl mx-auto text-muted-foreground"
+          className="text-center mb-20 max-w-2xl mx-auto"
+          style={{ color: "hsl(var(--section-light-muted))" }}
         >
           Um framework validado em 4 etapas para eliminar incerteza e acelerar resultados.
         </motion.p>
@@ -63,11 +64,14 @@ const StrategySection = () => {
               </span>
               <h3
                 className="font-heading text-xl font-semibold uppercase tracking-wide"
-                style={{ color: "hsl(var(--text-heading))" }}
+                style={{ color: "hsl(var(--section-light-heading))" }}
               >
                 {step.title}
               </h3>
-              <p className="text-sm leading-relaxed text-foreground">
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "hsl(var(--section-light-body))" }}
+              >
                 {step.description}
               </p>
             </motion.div>

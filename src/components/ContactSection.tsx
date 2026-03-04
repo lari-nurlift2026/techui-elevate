@@ -3,8 +3,8 @@ import { Phone, Mail, MapPin, Send, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="recursos" className="py-32 relative section-gradient-dark">
-      <div className="container mx-auto px-6">
+    <section id="recursos" className="py-24 section-dark-gradient border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
           {/* Left */}
           <motion.div

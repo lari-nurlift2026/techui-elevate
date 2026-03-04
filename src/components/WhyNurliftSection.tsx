@@ -27,10 +27,10 @@ const reasons = [
 
 const WhyNurliftSection = () => {
   return (
-    <section id="por-que" className="py-32 relative section-gradient-dark">
-      <div className="glow-line w-full mb-32" />
+    <section id="por-que" className="py-24 section-dark-gradient border-t border-white/5">
+      <div className="glow-line w-full mb-24" />
 
-      <div className="container mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,9 +56,9 @@ const WhyNurliftSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12 }}
-              className="glass-card-hover rounded-xl p-10 relative overflow-hidden"
+              className="card-glow rounded-xl p-10"
             >
-              <div className="relative z-10 flex flex-col gap-5">
+              <div className="flex flex-col gap-5">
                 <div className="p-3 rounded-lg bg-primary/10 w-fit">
                   <item.icon className="text-primary" size={24} />
                 </div>
