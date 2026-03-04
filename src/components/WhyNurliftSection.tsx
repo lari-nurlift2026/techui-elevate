@@ -1,32 +1,33 @@
 import { motion } from "framer-motion";
-import { Globe, TrendingUp, ShieldCheck, BarChart3 } from "lucide-react";
+import { Layers, Globe, Brain } from "lucide-react";
 
 const reasons = [
   {
+    icon: Layers,
+    stat: "+20 OPERAÇÕES ORQUESTRADAS",
+    title: "Arquitetura estratégica validada",
+    description:
+      "Metodologia proprietária de soft landing testada em +20 operações internacionais. Cada implementação é desenhada como infraestrutura — não como projeto.",
+  },
+  {
     icon: Globe,
-    title: "Presença Global",
-    description: "Conexão com mercados da América do Norte, Europa e Ásia para trazer inovação validada ao Brasil.",
+    stat: "3 HUBS ESTRATÉGICOS ATIVOS",
+    title: "Rede global, execução local",
+    description:
+      "Presença estratégica em São Paulo, Los Angeles e Bruxelas. Suporte multilingue (PT • EN • ES) em cada interação. Comunicação fluida, sem ruído.",
   },
   {
-    icon: TrendingUp,
-    title: "Crescimento Acelerado",
-    description: "Frameworks de go-to-market que reduzem time-to-value e aceleram ROI desde os primeiros ciclos.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Compliance & Governança",
-    description: "Operação estruturada com LGPD, SLAs definidos e governança de dados desde o dia um.",
-  },
-  {
-    icon: BarChart3,
-    title: "Dados & Performance",
-    description: "Decisões orientadas por dados reais, com dashboards e KPIs claros para evolução contínua.",
+    icon: Brain,
+    stat: "+15 ANOS DE INTELIGÊNCIA ACUMULADA",
+    title: "Inteligência Data-Driven",
+    description:
+      "+15 anos orquestrando tecnologias em mercados internacionais com governança de dados, compliance e KPIs mensuráveis desde o dia um.",
   },
 ];
 
 const WhyNurliftSection = () => {
   return (
-    <section id="por-que-o-brasil?" className="py-32 relative">
+    <section id="por-que" className="py-32 relative">
       <div className="glow-line w-full mb-32" />
 
       <div className="container mx-auto px-6">
@@ -36,15 +37,18 @@ const WhyNurliftSection = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">Diferencial</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wider"
+          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
+            Por que a Nurlift
+          </p>
+          <h2
+            className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wider max-w-4xl mx-auto"
             style={{ color: "hsl(var(--text-heading))" }}
           >
-            Por que a Nurlift
+            Metodologia validada, presença global e inteligência data-driven
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {reasons.map((item, i) => (
             <motion.div
               key={item.title}
@@ -54,20 +58,22 @@ const WhyNurliftSection = () => {
               transition={{ delay: i * 0.12 }}
               className="glass-card-hover rounded-xl p-10 relative overflow-hidden"
             >
-              <span className="step-number absolute -top-4 -right-2 text-[120px] leading-none select-none pointer-events-none">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-
-              <div className="relative z-10 flex flex-col gap-4">
+              <div className="relative z-10 flex flex-col gap-5">
                 <div className="p-3 rounded-lg bg-primary/10 w-fit">
                   <item.icon className="text-primary" size={24} />
                 </div>
-                <h3 className="font-heading text-xl font-semibold uppercase tracking-wide"
+                <p className="text-primary text-xs font-bold tracking-widest uppercase">
+                  {item.stat}
+                </p>
+                <h3
+                  className="font-heading text-xl font-semibold uppercase tracking-wide"
                   style={{ color: "hsl(var(--text-heading))" }}
                 >
                   {item.title}
                 </h3>
-                <p className="text-foreground leading-relaxed">{item.description}</p>
+                <p className="text-foreground leading-relaxed text-sm">
+                  {item.description}
+                </p>
               </div>
             </motion.div>
           ))}
