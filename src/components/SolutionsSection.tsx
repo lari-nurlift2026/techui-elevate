@@ -1,36 +1,32 @@
 import { motion } from "framer-motion";
-import { BarChart3, Globe, Megaphone, Code, Users, TrendingUp } from "lucide-react";
+import { Grid3X3, Zap } from "lucide-react";
 
 const solutions = [
   {
-    icon: Globe,
-    title: "Expansão de Mercado",
-    description: "Estratégias de entrada no mercado brasileiro com análise de concorrência, posicionamento e adaptação cultural.",
+    icon: Grid3X3,
+    title: "Enterprise",
+    subtitle: "Governança, integração e escala sustentável",
+    description:
+      "Conectamos stacks globais à operação brasileira com governança clara, compliance LGPD e processos preparados para escalar com segurança. Menos fricção. Mais controle. Resultados mensuráveis.",
+    deliverables: [
+      "Orquestração estratégica de stacks multi-vendor",
+      "Governança de dados e compliance LGPD",
+      "Operação escalável com SLAs definidos",
+      "Integração fluida entre times locais e globais",
+    ],
   },
   {
-    icon: Megaphone,
-    title: "Marketing de Performance",
-    description: "Campanhas data-driven com ROI mensurável. Mídia paga, SEO, conteúdo e automação de funis.",
-  },
-  {
-    icon: Code,
-    title: "Infraestrutura Digital",
-    description: "Desenvolvimento de plataformas, integração de sistemas e arquitetura escalável para operação local.",
-  },
-  {
-    icon: BarChart3,
-    title: "Business Intelligence",
-    description: "Dashboards e relatórios inteligentes que transformam dados em decisões estratégicas de crescimento.",
-  },
-  {
-    icon: Users,
-    title: "Talent Acquisition",
-    description: "Recrutamento especializado de talentos tech e liderança para times de alta performance no Brasil.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Growth Operations",
-    description: "Operação contínua de crescimento com squads dedicados, sprints e KPIs claros de escala.",
+    icon: Zap,
+    title: "PMEs e Scale-ups",
+    subtitle: "Agilidade, performance e crescimento acelerado",
+    description:
+      "Implementamos soluções enxutas que transformam tecnologia em crescimento rápido. Com automação estratégica e métricas claras, aceleramos o time-to-value e geramos ROI desde os primeiros ciclos.",
+    deliverables: [
+      "Stack essencial de alto impacto",
+      "Automação de marketing e vendas orientada a resultados",
+      "Performance com indicadores objetivos",
+      "Implementação rápida com foco em geração de demanda",
+    ],
   },
 ];
 
@@ -44,34 +40,50 @@ const SolutionsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">Soluções</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wider"
+          <h2
+            className="font-heading text-4xl md:text-5xl font-bold italic tracking-wider"
             style={{ color: "hsl(var(--text-heading))" }}
           >
-            O que entregamos
+            Soluções calibradas para cada realidade
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {solutions.map((item, i) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="glass-card-hover rounded-xl p-8 md:p-10 group"
+              transition={{ delay: i * 0.15 }}
+              className="glass-card-hover rounded-xl p-10 relative overflow-hidden"
             >
-              <div className="flex flex-col items-start gap-5">
-                <div className="p-3 rounded-lg bg-primary/10">
+              <div className="relative z-10 flex flex-col gap-5">
+                <div className="p-3 rounded-lg bg-primary/10 w-fit">
                   <item.icon className="text-primary" size={28} />
                 </div>
-                <h3 className="font-heading text-xl font-semibold uppercase tracking-wide"
-                  style={{ color: "hsl(var(--text-heading))" }}
-                >
-                  {item.title}
-                </h3>
+                <div>
+                  <h3
+                    className="font-heading text-2xl font-semibold uppercase tracking-wide text-primary"
+                  >
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mt-1">{item.subtitle}</p>
+                </div>
                 <p className="text-foreground leading-relaxed">{item.description}</p>
+                <div>
+                  <p className="text-primary font-medium tracking-widest uppercase text-xs mb-3">
+                    O que entregamos:
+                  </p>
+                  <ul className="space-y-2">
+                    {item.deliverables.map((d) => (
+                      <li key={d} className="text-foreground text-sm flex items-start gap-2">
+                        <span className="text-primary mt-1">·</span>
+                        {d}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </motion.div>
           ))}

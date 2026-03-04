@@ -1,33 +1,32 @@
 import { motion } from "framer-motion";
-import { Shield, Zap, Target, Award } from "lucide-react";
+import { Globe, TrendingUp, ShieldCheck, BarChart3 } from "lucide-react";
 
 const reasons = [
   {
-    icon: Target,
-    title: "Foco no Brasil",
-    description: "Conhecimento profundo do mercado brasileiro, regulações, cultura de consumo e dinâmica competitiva local.",
+    icon: Globe,
+    title: "Presença Global",
+    description: "Conexão com mercados da América do Norte, Europa e Ásia para trazer inovação validada ao Brasil.",
   },
   {
-    icon: Zap,
-    title: "Execução Ágil",
-    description: "Squads multidisciplinares que entregam com velocidade de startup e rigor de enterprise.",
+    icon: TrendingUp,
+    title: "Crescimento Acelerado",
+    description: "Frameworks de go-to-market que reduzem time-to-value e aceleram ROI desde os primeiros ciclos.",
   },
   {
-    icon: Shield,
-    title: "Confiança Global",
-    description: "Parceiros de empresas líderes mundiais que confiam na nossa metodologia comprovada de resultados.",
+    icon: ShieldCheck,
+    title: "Compliance & Governança",
+    description: "Operação estruturada com LGPD, SLAs definidos e governança de dados desde o dia um.",
   },
   {
-    icon: Award,
-    title: "Resultados Mensuráveis",
-    description: "Cada ação é rastreada, otimizada e reportada. Transparência total em KPIs e ROI.",
+    icon: BarChart3,
+    title: "Dados & Performance",
+    description: "Decisões orientadas por dados reais, com dashboards e KPIs claros para evolução contínua.",
   },
 ];
 
 const WhyNurliftSection = () => {
   return (
     <section id="por-que-o-brasil?" className="py-32 relative">
-      {/* Divider */}
       <div className="glow-line w-full mb-32" />
 
       <div className="container mx-auto px-6">
@@ -55,7 +54,6 @@ const WhyNurliftSection = () => {
               transition={{ delay: i * 0.12 }}
               className="glass-card-hover rounded-xl p-10 relative overflow-hidden"
             >
-              {/* Background step number */}
               <span className="step-number absolute -top-4 -right-2 text-[120px] leading-none select-none pointer-events-none">
                 {String(i + 1).padStart(2, "0")}
               </span>
