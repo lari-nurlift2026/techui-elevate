@@ -41,7 +41,7 @@ const HeroSection = () => {
               <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity text-primary" />
             </button>
             <button className="glass-card-hover flex items-center gap-3 px-6 py-4 rounded-lg font-medium text-foreground group">
-              <Settings className="text-primary" size={20} />
+              <Network className="text-primary" size={20} />
               <span>{t("hero.consolidate")}</span>
               <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity text-primary" />
             </button>
