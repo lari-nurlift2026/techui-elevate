@@ -6,24 +6,24 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Where global innovation becomes profitability in Brazil.",
-    "description": "We connect cutting-edge innovation and advanced marketing to hands-on execution in Brazil, turning strategy into results. From expansion to consolidation, we drive growth with scale, intelligence, and local insight.",
+    "title": "Where global innovation becomes measurable impact in Brazil.",
+    "description": "We bridge cutting-edge innovation and strategic marketing with hands-on execution in Brazil — from expansion to consolidation, driving growth with intelligence, scale, and local depth.",
     "cta": "What's your company's next move?",
     "scale": "Scale operations",
     "consolidate": "Consolidate infrastructure"
   },
   "intro": {
     "title": "Global Technology. Data-Driven Strategy. Scalable Growth.",
-    "p1": "We unite global marketing platforms with a strategic operation designed for Brazil, turning innovation into tangible results.",
-    "p2": "With data intelligence, automation, and a focus on performance, we build digital ecosystems ready to scale, optimize investments, and amplify brand impact."
+    "p1": "We connect global marketing platforms to a strategic operation shaped for Brazil, translating innovation into consistent, tangible results.",
+    "p2": "Through data intelligence, automation, and a relentless focus on performance, we architect digital ecosystems built to scale, optimize investments, and amplify brand impact."
   },
   "solutions": {
-    "title": "Solutions calibrated for every reality",
+    "title": "Solutions designed for every scenario",
     "deliverables_label": "What we deliver:",
     "enterprise": {
       "title": "Enterprise",
       "subtitle": "Governance, integration, and sustainable scale",
-      "description": "We connect global stacks to Brazilian operations with clear governance, LGPD compliance, and processes built to scale securely. Less friction. More control. Measurable results.",
+      "description": "We integrate global stacks into Brazilian operations with structured governance, LGPD compliance, and processes engineered to scale securely. Less friction, more control, measurable outcomes.",
       "d1": "Strategic orchestration of multi-vendor stacks",
       "d2": "Data governance and LGPD compliance",
       "d3": "Scalable operations with defined SLAs",
@@ -32,54 +32,54 @@
     "scaleups": {
       "title": "SMBs & Scale-ups",
       "subtitle": "Agility, performance, and accelerated growth",
-      "description": "We implement lean solutions that turn technology into rapid growth. With strategic automation and clear metrics, we accelerate time-to-value and generate ROI from the first cycles.",
+      "description": "We deploy agile solutions that convert technology into tangible growth. With intelligent automation and precise metrics, we accelerate time-to-value and deliver returns from the earliest cycles.",
       "d1": "High-impact essential stack",
       "d2": "Results-oriented marketing and sales automation",
       "d3": "Performance with objective KPIs",
-      "d4": "Fast implementation focused on demand generation"
+      "d4": "Agile implementation focused on demand generation"
     }
   },
   "about": {
     "title1": "Nurlift:",
     "title2": "Where Innovation Challenges the Obvious",
-    "quote": "Inspired by Nur the bear, a symbol of adaptation and strength in unexpected territories — the first of her kind born in a tropical environment — Nurlift was created to challenge patterns and turn complexity into opportunity. We combine strategic vision, emotional intelligence, and data-driven rigor to connect global innovation to local reality.",
-    "p1_start": "We were born from a partnership built on contrasts that became complementarity. Where others saw barriers, we applied ",
+    "quote": "Inspired by Nur the bear — a symbol of adaptation and resilience in unexpected territories, the first of her kind born in a tropical environment — Nurlift was created to challenge conventions and turn complexity into opportunity. We combine strategic vision, sensitivity, and analytical rigor to connect global innovation to local reality.",
+    "p1_start": "We were born from a partnership built on contrasts that became complementarity. Where others perceived barriers, we applied ",
     "p1_bold": "strategy and analysis",
-    "p1_end": " to open new paths.",
-    "p2_start": "We live the particularities of Brazil firsthand, and it's this experience that allows us to ",
+    "p1_end": " to uncover new paths.",
+    "p2_start": "We experience Brazil's particularities firsthand — and it's this depth that enables us to ",
     "p2_bold1": "transform global technologies into tangible impact",
-    "p2_mid": ". More than integrating solutions, we act as a bridge between ",
+    "p2_mid": ". Beyond integrating solutions, we serve as a bridge between ",
     "p2_bold2": "strategy, technology, and execution",
-    "p2_mid2": ", driving innovation forward with ",
+    "p2_mid2": ", guiding innovation forward with ",
     "p2_bold3": "purpose and leadership",
     "p2_end": "."
   },
   "ecosystem": {
     "title": "The Nurlift Ecosystem",
-    "description": "Our core lies in translating the technological maturity of markets like North America, Europe, and Asia into the Brazilian context, connecting globally validated solutions into a coherent ecosystem — designed to generate operational efficiency, sustainable scale, and measurable impact.",
+    "description": "Our edge lies in translating the technological maturity of markets like North America, Europe, and Asia into the Brazilian context — connecting globally validated solutions into a coherent ecosystem designed to generate operational efficiency, sustainable scale, and measurable impact.",
     "pillar1_title": "Soft Landing\n& Go-to-Market",
-    "pillar1_desc": "Market entry strategy with roadmap, partners, and coordinated local execution.",
+    "pillar1_desc": "Structured market entry strategy with roadmap, partners, and coordinated local execution.",
     "pillar2_title": "Corporate\nOutsourcing",
-    "pillar2_desc": "Specialized teams that operate as an extension of your structure.",
+    "pillar2_desc": "Specialized teams that operate as a natural extension of your structure.",
     "pillar3_title": "Data & Strategy-Driven\nPerformance",
-    "pillar3_desc": "Intelligent workflows that eliminate friction and multiply efficiency."
+    "pillar3_desc": "Intelligent workflows that eliminate friction and amplify efficiency."
   },
   "why": {
     "label": "Why Nurlift",
     "title": "Proven methodology, global presence, and data-driven intelligence",
     "r1_stat": "+20 ORCHESTRATED OPERATIONS",
     "r1_title": "Validated strategic architecture",
-    "r1_desc": "Proprietary soft landing methodology tested in 20+ international operations. Each implementation is designed as infrastructure — not as a project.",
+    "r1_desc": "Proprietary soft landing methodology tested across 20+ international operations. Each implementation is conceived as infrastructure — not as a project.",
     "r2_stat": "3 ACTIVE STRATEGIC HUBS",
     "r2_title": "Global network, local execution",
-    "r2_desc": "Strategic presence in São Paulo, Los Angeles, and Brussels. Multilingual support (PT • EN • ES) in every interaction. Seamless communication, zero noise.",
+    "r2_desc": "Strategic presence in São Paulo, Los Angeles, and Brussels. Multilingual support (PT · EN · ES) in every interaction. Seamless communication, zero noise.",
     "r3_stat": "+15 YEARS OF ACCUMULATED INTELLIGENCE",
     "r3_title": "Data-Driven Intelligence",
-    "r3_desc": "15+ years orchestrating technologies in international markets with data governance, compliance, and measurable KPIs from day one."
+    "r3_desc": "15+ years orchestrating technologies across international markets with data governance, compliance, and measurable KPIs from day one."
   },
   "partners": {
     "title": "Partners",
-    "description": "We orchestrate leading global marketing solutions to structure and strengthen your marketing infrastructure in Brazil — connecting technology, strategy, and execution with a focus on consistent results."
+    "description": "We orchestrate leading global marketing solutions to structure and strengthen your infrastructure in Brazil — connecting technology, strategy, and execution with a focus on consistent results."
   },
   "contact": {
     "title1": "Ready to ",
@@ -89,7 +89,7 @@
     "phone_label": "Phone",
     "email_label": "Email",
     "address_label": "Address",
-    "address": "Rua Dr. Luiz Folqueriane Sobrinho, 71\nVila Mariana São Paulo/SP – Brazil",
+    "address": "Rua Dr. Luiz Folqueriane Sobrinho, 71\nVila Mariana · São Paulo/SP – Brazil",
     "form_name": "Name",
     "form_company": "Company",
     "form_email": "Email",
