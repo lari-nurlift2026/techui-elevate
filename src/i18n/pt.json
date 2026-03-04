@@ -3,83 +3,83 @@
     "home": "Home",
     "services": "Serviços",
     "about": "Sobre nós",
-    "contact": "Recursos"
+    "contact": "Contato"
   },
   "hero": {
-    "title": "Onde a inovação global se torna lucratividade no Brasil.",
-    "description": "Conectamos inovação e marketing avançado à execução prática no Brasil, transformando estratégia em resultado. Da expansão à consolidação, impulsionamos crescimento com escala, inteligência e visão local.",
-    "cta": "Qual é o próximo passo da sua empresa?",
+    "title": "Onde a inovação global se transforma em resultados no Brasil.",
+    "description": "Unimos inovação de ponta e marketing estratégico à execução no Brasil — da expansão à consolidação, impulsionamos crescimento com inteligência, escala e profundidade local.",
+    "cta": "Qual é o próximo movimento da sua empresa?",
     "scale": "Escalar operação",
     "consolidate": "Consolidar infraestrutura"
   },
   "intro": {
     "title": "Tecnologia Global. Estratégia Orientada por Dados. Crescimento Escalável.",
-    "p1": "Unimos plataformas globais de marketing a uma operação estratégica pensada para o Brasil, transformando inovação em resultados concretos.",
-    "p2": "Com inteligência de dados, automação e foco em performance, construímos ecossistemas digitais prontos para escalar, otimizar investimentos e ampliar impacto de marca."
+    "p1": "Conectamos plataformas globais de marketing a uma operação estratégica moldada para o Brasil, traduzindo inovação em resultados consistentes.",
+    "p2": "Por meio de inteligência de dados, automação e foco em performance, estruturamos ecossistemas digitais preparados para escalar, otimizar investimentos e amplificar o impacto da sua marca."
   },
   "solutions": {
-    "title": "Soluções calibradas para cada realidade",
+    "title": "Soluções desenhadas para cada cenário",
     "deliverables_label": "O que entregamos:",
     "enterprise": {
       "title": "Enterprise",
       "subtitle": "Governança, integração e escala sustentável",
-      "description": "Conectamos stacks globais à operação brasileira com governança clara, compliance LGPD e processos preparados para escalar com segurança. Menos fricção. Mais controle. Resultados mensuráveis.",
+      "description": "Integramos stacks globais à operação brasileira com governança estruturada, compliance LGPD e processos prontos para escalar com segurança. Menos atrito, mais controle, resultados mensuráveis.",
       "d1": "Orquestração estratégica de stacks multi-vendor",
       "d2": "Governança de dados e compliance LGPD",
       "d3": "Operação escalável com SLAs definidos",
       "d4": "Integração fluida entre times locais e globais"
     },
     "scaleups": {
-      "title": "PMEs e Scale-ups",
+      "title": "PMEs & Scale-ups",
       "subtitle": "Agilidade, performance e crescimento acelerado",
-      "description": "Implementamos soluções enxutas que transformam tecnologia em crescimento rápido. Com automação estratégica e métricas claras, aceleramos o time-to-value e geramos ROI desde os primeiros ciclos.",
+      "description": "Implementamos soluções ágeis que convertem tecnologia em crescimento tangível. Com automação inteligente e métricas precisas, aceleramos o time-to-value e geramos retorno desde os primeiros ciclos.",
       "d1": "Stack essencial de alto impacto",
       "d2": "Automação de marketing e vendas orientada a resultados",
       "d3": "Performance com indicadores objetivos",
-      "d4": "Implementação rápida com foco em geração de demanda"
+      "d4": "Implementação ágil focada em geração de demanda"
     }
   },
   "about": {
     "title1": "Nurlift:",
     "title2": "Onde a Inovação Desafia o Óbvio",
-    "quote": "Inspirada pela ursa Nur, símbolo de adaptação e força em territórios inesperados, a primeira de sua espécie nascida em ambiente tropical, a Nurlift surgiu para desafiar padrões e transformar complexidade em oportunidade. Unimos visão estratégica, inteligência emocional e rigor orientado por dados para conectar inovação global à realidade local.",
-    "p1_start": "Nascemos de uma parceria construída a partir de contrastes que se tornaram complementaridade. Onde outros viam barreiras, aplicamos ",
+    "quote": "Inspirada pela ursa Nur — símbolo de adaptação e resiliência em territórios inesperados, a primeira de sua espécie nascida em ambiente tropical — a Nurlift nasceu para desafiar padrões e transformar complexidade em oportunidade. Unimos visão estratégica, sensibilidade e rigor analítico para conectar inovação global à realidade local.",
+    "p1_start": "Nascemos de uma parceria construída sobre contrastes que se tornaram complementaridade. Onde outros enxergavam barreiras, aplicamos ",
     "p1_bold": "estratégia e análise",
-    "p1_end": " para abrir novos caminhos.",
-    "p2_start": "Vivemos de perto as particularidades do Brasil e é essa vivência que nos permite ",
+    "p1_end": " para revelar novos caminhos.",
+    "p2_start": "Vivemos de perto as particularidades do Brasil — e é essa vivência que nos permite ",
     "p2_bold1": "transformar tecnologias globais em impacto tangível",
-    "p2_mid": ". Mais do que integrar soluções, atuamos como elo entre ",
+    "p2_mid": ". Mais do que integrar soluções, atuamos como ponte entre ",
     "p2_bold2": "estratégia, tecnologia e execução",
-    "p2_mid2": ", fazendo a inovação avançar com ",
+    "p2_mid2": ", conduzindo a inovação com ",
     "p2_bold3": "propósito e liderança",
     "p2_end": "."
   },
   "ecosystem": {
     "title": "O Ecossistema Nurlift",
-    "description": "Nosso core está em traduzir a maturidade tecnológica de mercados como América do Norte, Europa e Ásia para o contexto brasileiro, conectando soluções globalmente validadas em um ecossistema coerente — projetado para gerar eficiência operacional, escala sustentável e impacto mensurável.",
+    "description": "Nosso diferencial está em traduzir a maturidade tecnológica de mercados como América do Norte, Europa e Ásia para o contexto brasileiro — conectando soluções globalmente validadas em um ecossistema coerente, projetado para gerar eficiência operacional, escala sustentável e impacto mensurável.",
     "pillar1_title": "Soft Landing\n& Go-to-Market",
-    "pillar1_desc": "Estratégia de entrada com roadmap, parceiros e execução local coordenada.",
-    "pillar2_title": "Outsourcing\ncorporativo",
-    "pillar2_desc": "Equipes especializadas que operam como extensão da sua estrutura.",
-    "pillar3_title": "Performance refinada\npor dados e estratégia",
-    "pillar3_desc": "Fluxos inteligentes que eliminam atrito e multiplicam eficiência."
+    "pillar1_desc": "Estratégia de entrada estruturada com roadmap, parceiros e execução local coordenada.",
+    "pillar2_title": "Outsourcing\nCorporativo",
+    "pillar2_desc": "Equipes especializadas que operam como extensão natural da sua estrutura.",
+    "pillar3_title": "Performance Orientada\npor Dados e Estratégia",
+    "pillar3_desc": "Fluxos inteligentes que eliminam atrito e potencializam eficiência."
   },
   "why": {
     "label": "Por que a Nurlift",
-    "title": "Metodologia validada, presença global e inteligência data-driven",
+    "title": "Metodologia validada, presença global e inteligência orientada por dados",
     "r1_stat": "+20 OPERAÇÕES ORQUESTRADAS",
     "r1_title": "Arquitetura estratégica validada",
-    "r1_desc": "Metodologia proprietária de soft landing testada em +20 operações internacionais. Cada implementação é desenhada como infraestrutura — não como projeto.",
+    "r1_desc": "Metodologia proprietária de soft landing testada em mais de 20 operações internacionais. Cada implementação é concebida como infraestrutura — não como projeto.",
     "r2_stat": "3 HUBS ESTRATÉGICOS ATIVOS",
     "r2_title": "Rede global, execução local",
-    "r2_desc": "Presença estratégica em São Paulo, Los Angeles e Bruxelas. Suporte multilingue (PT • EN • ES) em cada interação. Comunicação fluida, sem ruído.",
+    "r2_desc": "Presença estratégica em São Paulo, Los Angeles e Bruxelas. Suporte multilingue (PT · EN · ES) em cada interação. Comunicação fluida, sem ruído.",
     "r3_stat": "+15 ANOS DE INTELIGÊNCIA ACUMULADA",
     "r3_title": "Inteligência Data-Driven",
-    "r3_desc": "+15 anos orquestrando tecnologias em mercados internacionais com governança de dados, compliance e KPIs mensuráveis desde o dia um."
+    "r3_desc": "Mais de 15 anos orquestrando tecnologias em mercados internacionais com governança de dados, compliance e KPIs mensuráveis desde o primeiro dia."
   },
   "partners": {
     "title": "Parceiros",
-    "description": "Orquestramos soluções de marketing líderes no cenário global para estruturar e fortalecer sua infraestrutura de marketing no Brasil — conectando tecnologia, estratégia e execução com foco em resultados consistentes."
+    "description": "Orquestramos soluções de marketing líderes no cenário global para estruturar e fortalecer sua infraestrutura no Brasil — conectando tecnologia, estratégia e execução com foco em resultados consistentes."
   },
   "contact": {
     "title1": "Pronto para ",
@@ -89,7 +89,7 @@
     "phone_label": "Telefone",
     "email_label": "E-mail",
     "address_label": "Endereço",
-    "address": "Rua Dr. Luiz Folqueriane Sobrinho, 71\nVila Mariana São Paulo/SP – Brasil",
+    "address": "Rua Dr. Luiz Folqueriane Sobrinho, 71\nVila Mariana · São Paulo/SP – Brasil",
     "form_name": "Nome",
     "form_company": "Empresa",
     "form_email": "E-mail",
