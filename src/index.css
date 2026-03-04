@@ -48,13 +48,6 @@
     --glass-border: 0 0% 100%;
     --glass-bg: 220 30% 14%;
 
-    /* Light section tokens */
-    --section-light-bg: 210 33% 97%;
-    --section-light-card-bg: 0 0% 100%;
-    --section-light-heading: 220 40% 13%;
-    --section-light-body: 220 15% 30%;
-    --section-light-muted: 220 10% 50%;
-
     --font-heading: 'Barlow Condensed', sans-serif;
     --font-body: 'Inter', sans-serif;
   }
