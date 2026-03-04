@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Rocket, Settings } from "lucide-react";
+import { ArrowRight, Rocket, Network } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-aurora.jpg";
 
