@@ -1,25 +1,28 @@
 import { motion } from "framer-motion";
 import { ArrowRightLeft, Users, BarChart3 } from "lucide-react";
-
-const pillars = [
-  {
-    icon: ArrowRightLeft,
-    title: "Soft Landing\n& Go-to-Market",
-    description: "Estratégia de entrada com roadmap, parceiros e execução local coordenada.",
-  },
-  {
-    icon: Users,
-    title: "Outsourcing\ncorporativo",
-    description: "Equipes especializadas que operam como extensão da sua estrutura.",
-  },
-  {
-    icon: BarChart3,
-    title: "Performance refinada\npor dados e estratégia",
-    description: "Fluxos inteligentes que eliminam atrito e multiplicam eficiência.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const EcosystemSection = () => {
+  const { t } = useTranslation();
+
+  const pillars = [
+    {
+      icon: ArrowRightLeft,
+      title: t("ecosystem.pillar1_title"),
+      description: t("ecosystem.pillar1_desc"),
+    },
+    {
+      icon: Users,
+      title: t("ecosystem.pillar2_title"),
+      description: t("ecosystem.pillar2_desc"),
+    },
+    {
+      icon: BarChart3,
+      title: t("ecosystem.pillar3_title"),
+      description: t("ecosystem.pillar3_desc"),
+    },
+  ];
+
   return (
     <section className="py-24 section-light">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -33,7 +36,7 @@ const EcosystemSection = () => {
             className="font-heading text-4xl md:text-5xl font-bold tracking-wider"
             style={{ color: "hsl(var(--section-light-heading))" }}
           >
-            O Ecossistema Nurlift
+            {t("ecosystem.title")}
           </h2>
         </motion.div>
 
@@ -44,9 +47,7 @@ const EcosystemSection = () => {
           className="text-center leading-relaxed max-w-3xl mx-auto mb-20"
           style={{ color: "hsl(var(--section-light-body))" }}
         >
-          Nosso core está em traduzir a maturidade tecnológica de mercados como América do Norte, Europa e Ásia para o contexto
-          brasileiro, conectando soluções globalmente validadas em um ecossistema coerente — projetado para gerar eficiência
-          operacional, escala sustentável e impacto mensurável.
+          {t("ecosystem.description")}
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
@@ -62,9 +63,7 @@ const EcosystemSection = () => {
               <div className="p-4 rounded-xl bg-primary/10">
                 <item.icon className="text-primary" size={40} />
               </div>
-              <h3
-                className="font-heading text-lg font-semibold tracking-wide text-primary whitespace-pre-line"
-              >
+              <h3 className="font-heading text-lg font-semibold tracking-wide text-primary whitespace-pre-line">
                 {item.title}
               </h3>
               <p className="text-sm leading-relaxed" style={{ color: "hsl(var(--section-light-body))" }}>

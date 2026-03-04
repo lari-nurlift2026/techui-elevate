@@ -1,31 +1,31 @@
 import { motion } from "framer-motion";
 import { Layers, Globe, Brain } from "lucide-react";
-
-const reasons = [
-  {
-    icon: Layers,
-    stat: "+20 OPERAÇÕES ORQUESTRADAS",
-    title: "Arquitetura estratégica validada",
-    description:
-      "Metodologia proprietária de soft landing testada em +20 operações internacionais. Cada implementação é desenhada como infraestrutura — não como projeto.",
-  },
-  {
-    icon: Globe,
-    stat: "3 HUBS ESTRATÉGICOS ATIVOS",
-    title: "Rede global, execução local",
-    description:
-      "Presença estratégica em São Paulo, Los Angeles e Bruxelas. Suporte multilingue (PT • EN • ES) em cada interação. Comunicação fluida, sem ruído.",
-  },
-  {
-    icon: Brain,
-    stat: "+15 ANOS DE INTELIGÊNCIA ACUMULADA",
-    title: "Inteligência Data-Driven",
-    description:
-      "+15 anos orquestrando tecnologias em mercados internacionais com governança de dados, compliance e KPIs mensuráveis desde o dia um.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const WhyNurliftSection = () => {
+  const { t } = useTranslation();
+
+  const reasons = [
+    {
+      icon: Layers,
+      stat: t("why.r1_stat"),
+      title: t("why.r1_title"),
+      description: t("why.r1_desc"),
+    },
+    {
+      icon: Globe,
+      stat: t("why.r2_stat"),
+      title: t("why.r2_title"),
+      description: t("why.r2_desc"),
+    },
+    {
+      icon: Brain,
+      stat: t("why.r3_stat"),
+      title: t("why.r3_title"),
+      description: t("why.r3_desc"),
+    },
+  ];
+
   return (
     <section id="por-que" className="py-24 section-dark-gradient border-t border-white/5">
       <div className="glow-line w-full mb-24" />
@@ -38,13 +38,13 @@ const WhyNurliftSection = () => {
           className="text-center mb-20"
         >
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
-            Por que a Nurlift
+            {t("why.label")}
           </p>
           <h2
             className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wider max-w-4xl mx-auto"
             style={{ color: "hsl(var(--text-heading))" }}
           >
-            Metodologia validada, presença global e inteligência data-driven
+            {t("why.title")}
           </h2>
         </motion.div>
 

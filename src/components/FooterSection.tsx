@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const FooterSection = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="py-10 section-dark border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -7,7 +11,7 @@ const FooterSection = () => {
             Nurlift
           </span>
           <p className="text-xs text-muted-foreground">
-            © 2026 Nurlift. Todos os direitos reservados.
+            {t("footer.rights")}
           </p>
         </div>
       </div>
