@@ -37,9 +37,9 @@
     --radius: 0.75rem;
 
     /* Custom Nurlift tokens */
-    --navy-deep: 220 40% 8%;
-    --navy-mid: 220 35% 12%;
-    --navy-light: 220 30% 16%;
+    --navy-deep: 222 47% 9%;
+    --navy-mid: 222 40% 12%;
+    --navy-light: 217 33% 17%;
     --cyan-glow: 185 80% 50%;
     --cyan-muted: 185 60% 35%;
     --text-body: 0 0% 88%;
@@ -48,12 +48,9 @@
     --glass-border: 0 0% 100%;
     --glass-bg: 220 30% 14%;
 
-    /* Light section tokens */
-    --section-light-bg: 210 33% 97%;
-    --section-light-card-bg: 0 0% 100%;
-    --section-light-heading: 220 40% 13%;
-    --section-light-body: 220 15% 30%;
-    --section-light-muted: 220 10% 50%;
+    /* Alternate dark section (lighter dark) */
+    --section-alt-bg: 217 33% 17%;
+    --section-alt-card-bg: 222 40% 12%;
 
     --font-heading: 'Barlow Condensed', sans-serif;
     --font-body: 'Inter', sans-serif;
