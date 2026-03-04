@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const partners = ["HubSpot", "Google Cloud", "Meta", "Segment", "Salesforce", "Braze"];
 
 const PartnersSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 section-light">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -16,7 +19,7 @@ const PartnersSection = () => {
             className="font-heading text-4xl md:text-5xl font-bold tracking-wider"
             style={{ color: "hsl(var(--section-light-heading))" }}
           >
-            Parceiros
+            {t("partners.title")}
           </h2>
         </motion.div>
 
@@ -27,9 +30,7 @@ const PartnersSection = () => {
           className="text-center leading-relaxed max-w-3xl mx-auto mb-16"
           style={{ color: "hsl(var(--section-light-body))" }}
         >
-          Orquestramos soluções de marketing líderes no cenário global para estruturar e fortalecer sua
-          infraestrutura de marketing no Brasil — conectando tecnologia, estratégia e execução com foco
-          em resultados consistentes.
+          {t("partners.description")}
         </motion.p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto">

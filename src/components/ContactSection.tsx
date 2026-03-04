@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send, Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="recursos" className="py-24 section-dark-gradient border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -15,12 +18,12 @@ const ContactSection = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-wider mb-2"
               style={{ color: "hsl(var(--text-heading))" }}
             >
-              Pronto para <span className="text-primary">elevar</span>
+              {t("contact.title1")}<span className="text-primary">{t("contact.title_accent")}</span>
             </h2>
             <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-wider mb-10"
               style={{ color: "hsl(var(--text-heading))" }}
             >
-              sua operação?
+              {t("contact.title2")}
             </h2>
 
             <div className="mb-8">
@@ -28,7 +31,7 @@ const ContactSection = () => {
                 Nurlift
               </span>
               <p className="text-muted-foreground text-xs tracking-widest uppercase mt-1">
-                House of Tech
+                {t("contact.brand_sub")}
               </p>
             </div>
 
@@ -36,25 +39,22 @@ const ContactSection = () => {
               <div className="flex items-start gap-3">
                 <Phone className="text-primary mt-1" size={18} />
                 <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Telefone</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t("contact.phone_label")}</p>
                   <p className="text-foreground">+55 11 0000-0000</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="text-primary mt-1" size={18} />
                 <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">E-mail</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t("contact.email_label")}</p>
                   <p className="text-foreground">contato@nurlift.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="text-primary mt-1" size={18} />
                 <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Endereço</p>
-                  <p className="text-foreground">
-                    Rua Dr. Luiz Folqueriane Sobrinho, 71<br />
-                    Vila Mariana São Paulo/SP – Brasil
-                  </p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{t("contact.address_label")}</p>
+                  <p className="text-foreground whitespace-pre-line">{t("contact.address")}</p>
                 </div>
               </div>
             </div>
@@ -80,31 +80,17 @@ const ContactSection = () => {
             viewport={{ once: true }}
           >
             <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="text"
-                placeholder="Nome"
-                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-              />
-              <input
-                type="text"
-                placeholder="Empresa"
-                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-              />
-              <input
-                type="email"
-                placeholder="E-mail"
-                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-              />
-              <textarea
-                placeholder="Mensagem"
-                rows={4}
-                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
-              />
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
-              >
-                Enviar mensagem
+              <input type="text" placeholder={t("contact.form_name")}
+                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors" />
+              <input type="text" placeholder={t("contact.form_company")}
+                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors" />
+              <input type="email" placeholder={t("contact.form_email")}
+                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors" />
+              <textarea placeholder={t("contact.form_message")} rows={4}
+                className="w-full px-5 py-4 rounded-lg bg-secondary/60 border border-border/30 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none" />
+              <button type="submit"
+                className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">
+                {t("contact.form_submit")}
                 <Send size={18} />
               </button>
             </form>

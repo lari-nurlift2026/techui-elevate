@@ -1,36 +1,37 @@
 import { motion } from "framer-motion";
 import { Grid3X3, Zap } from "lucide-react";
-
-const solutions = [
-  {
-    icon: Grid3X3,
-    title: "Enterprise",
-    subtitle: "Governança, integração e escala sustentável",
-    description:
-      "Conectamos stacks globais à operação brasileira com governança clara, compliance LGPD e processos preparados para escalar com segurança. Menos fricção. Mais controle. Resultados mensuráveis.",
-    deliverables: [
-      "Orquestração estratégica de stacks multi-vendor",
-      "Governança de dados e compliance LGPD",
-      "Operação escalável com SLAs definidos",
-      "Integração fluida entre times locais e globais",
-    ],
-  },
-  {
-    icon: Zap,
-    title: "PMEs e Scale-ups",
-    subtitle: "Agilidade, performance e crescimento acelerado",
-    description:
-      "Implementamos soluções enxutas que transformam tecnologia em crescimento rápido. Com automação estratégica e métricas claras, aceleramos o time-to-value e geramos ROI desde os primeiros ciclos.",
-    deliverables: [
-      "Stack essencial de alto impacto",
-      "Automação de marketing e vendas orientada a resultados",
-      "Performance com indicadores objetivos",
-      "Implementação rápida com foco em geração de demanda",
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const SolutionsSection = () => {
+  const { t } = useTranslation();
+
+  const solutions = [
+    {
+      icon: Grid3X3,
+      title: t("solutions.enterprise.title"),
+      subtitle: t("solutions.enterprise.subtitle"),
+      description: t("solutions.enterprise.description"),
+      deliverables: [
+        t("solutions.enterprise.d1"),
+        t("solutions.enterprise.d2"),
+        t("solutions.enterprise.d3"),
+        t("solutions.enterprise.d4"),
+      ],
+    },
+    {
+      icon: Zap,
+      title: t("solutions.scaleups.title"),
+      subtitle: t("solutions.scaleups.subtitle"),
+      description: t("solutions.scaleups.description"),
+      deliverables: [
+        t("solutions.scaleups.d1"),
+        t("solutions.scaleups.d2"),
+        t("solutions.scaleups.d3"),
+        t("solutions.scaleups.d4"),
+      ],
+    },
+  ];
+
   return (
     <section id="serviços" className="py-24 section-light">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -44,7 +45,7 @@ const SolutionsSection = () => {
             className="font-heading text-4xl md:text-5xl font-bold italic tracking-wider"
             style={{ color: "hsl(var(--section-light-heading))" }}
           >
-            Soluções calibradas para cada realidade
+            {t("solutions.title")}
           </h2>
         </motion.div>
 
@@ -66,30 +67,20 @@ const SolutionsSection = () => {
                   <h3 className="font-heading text-2xl font-semibold uppercase tracking-wide text-primary">
                     {item.title}
                   </h3>
-                  <p
-                    className="text-sm mt-1"
-                    style={{ color: "hsl(var(--section-light-muted))" }}
-                  >
+                  <p className="text-sm mt-1" style={{ color: "hsl(var(--section-light-muted))" }}>
                     {item.subtitle}
                   </p>
                 </div>
-                <p
-                  className="leading-relaxed"
-                  style={{ color: "hsl(var(--section-light-body))" }}
-                >
+                <p className="leading-relaxed" style={{ color: "hsl(var(--section-light-body))" }}>
                   {item.description}
                 </p>
                 <div>
                   <p className="text-primary font-medium tracking-widest uppercase text-xs mb-3">
-                    O que entregamos:
+                    {t("solutions.deliverables_label")}
                   </p>
                   <ul className="space-y-2">
                     {item.deliverables.map((d) => (
-                      <li
-                        key={d}
-                        className="text-sm flex items-start gap-2"
-                        style={{ color: "hsl(var(--section-light-body))" }}
-                      >
+                      <li key={d} className="text-sm flex items-start gap-2" style={{ color: "hsl(var(--section-light-body))" }}>
                         <span className="text-primary mt-1">·</span>
                         {d}
                       </li>
