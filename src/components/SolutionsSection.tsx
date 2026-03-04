@@ -32,8 +32,8 @@ const solutions = [
 
 const SolutionsSection = () => {
   return (
-    <section id="serviços" className="py-32 relative section-gradient-alt">
-      <div className="container mx-auto px-6">
+    <section id="serviços" className="py-24 section-light">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ const SolutionsSection = () => {
         >
           <h2
             className="font-heading text-4xl md:text-5xl font-bold italic tracking-wider"
-            style={{ color: "hsl(var(--text-heading))" }}
+            style={{ color: "hsl(var(--section-light-heading))" }}
           >
             Soluções calibradas para cada realidade
           </h2>
@@ -56,9 +56,9 @@ const SolutionsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="rounded-xl p-10 relative overflow-hidden card-glow"
+              className="rounded-xl p-10 card-light"
             >
-              <div className="relative z-10 flex flex-col gap-5">
+              <div className="flex flex-col gap-5">
                 <div className="p-3 rounded-lg bg-primary/10 w-fit">
                   <item.icon className="text-primary" size={28} />
                 </div>
@@ -66,11 +66,17 @@ const SolutionsSection = () => {
                   <h3 className="font-heading text-2xl font-semibold uppercase tracking-wide text-primary">
                     {item.title}
                   </h3>
-                  <p className="text-sm mt-1 text-muted-foreground">
+                  <p
+                    className="text-sm mt-1"
+                    style={{ color: "hsl(var(--section-light-muted))" }}
+                  >
                     {item.subtitle}
                   </p>
                 </div>
-                <p className="leading-relaxed text-foreground">
+                <p
+                  className="leading-relaxed"
+                  style={{ color: "hsl(var(--section-light-body))" }}
+                >
                   {item.description}
                 </p>
                 <div>
@@ -81,7 +87,8 @@ const SolutionsSection = () => {
                     {item.deliverables.map((d) => (
                       <li
                         key={d}
-                        className="text-sm flex items-start gap-2 text-foreground"
+                        className="text-sm flex items-start gap-2"
+                        style={{ color: "hsl(var(--section-light-body))" }}
                       >
                         <span className="text-primary mt-1">·</span>
                         {d}

@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section id="sobre-nós" className="py-24 section-gradient-dark">
-      <div className="container mx-auto px-6">
+    <section id="sobre-nós" className="py-24 section-dark-gradient border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -21,8 +21,8 @@ const pillars = [
 
 const EcosystemSection = () => {
   return (
-    <section className="py-32 relative section-gradient-dark">
-      <div className="container mx-auto px-6">
+    <section className="py-24 section-light">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const EcosystemSection = () => {
         >
           <h2
             className="font-heading text-4xl md:text-5xl font-bold tracking-wider"
-            style={{ color: "hsl(var(--text-heading))" }}
+            style={{ color: "hsl(var(--section-light-heading))" }}
           >
             O Ecossistema Nurlift
           </h2>
@@ -41,7 +41,8 @@ const EcosystemSection = () => {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-foreground leading-relaxed max-w-3xl mx-auto mb-20"
+          className="text-center leading-relaxed max-w-3xl mx-auto mb-20"
+          style={{ color: "hsl(var(--section-light-body))" }}
         >
           Nosso core está em traduzir a maturidade tecnológica de mercados como América do Norte, Europa e Ásia para o contexto
           brasileiro, conectando soluções globalmente validadas em um ecossistema coerente — projetado para gerar eficiência
@@ -56,7 +57,7 @@ const EcosystemSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12 }}
-              className="text-center flex flex-col items-center gap-5"
+              className="text-center flex flex-col items-center gap-5 card-light rounded-xl p-8"
             >
               <div className="p-4 rounded-xl bg-primary/10">
                 <item.icon className="text-primary" size={40} />
@@ -66,7 +67,9 @@ const EcosystemSection = () => {
               >
                 {item.title}
               </h3>
-              <p className="text-foreground text-sm leading-relaxed">{item.description}</p>
+              <p className="text-sm leading-relaxed" style={{ color: "hsl(var(--section-light-body))" }}>
+                {item.description}
+              </p>
             </motion.div>
           ))}
         </div>
