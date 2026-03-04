@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Serviços",
-    "about": "Sobre nós",
-    "contact": "Recursos"
+    "services": "Soluções",
+    "about": "Sobre",
+    "partners": "Parceiros",
+    "contact": "Contato"
   },
   "hero": {
     "title": "Onde a inovação global se torna lucratividade no Brasil.",
