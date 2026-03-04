@@ -20,7 +20,7 @@ const Index = () => {
       <AboutSection />
       <EcosystemSection />
       <WhyNurliftSection />
-      <StrategySection />
+      
       <PartnersSection />
       <ContactSection />
       <FooterSection />
