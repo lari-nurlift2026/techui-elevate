@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Send, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="recursos" className="py-32 relative">
+    <section id="recursos" className="py-32 relative section-gradient-dark">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
           {/* Left */}

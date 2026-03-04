@@ -27,7 +27,7 @@ const reasons = [
 
 const WhyNurliftSection = () => {
   return (
-    <section id="por-que" className="py-32 relative">
+    <section id="por-que" className="py-32 relative section-gradient-dark">
       <div className="glow-line w-full mb-32" />
 
       <div className="container mx-auto px-6">
