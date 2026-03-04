@@ -5,7 +5,7 @@ import SolutionsSection from "@/components/SolutionsSection";
 import AboutSection from "@/components/AboutSection";
 import EcosystemSection from "@/components/EcosystemSection";
 import WhyNurliftSection from "@/components/WhyNurliftSection";
-import StrategySection from "@/components/StrategySection";
+
 import PartnersSection from "@/components/PartnersSection";
 import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
