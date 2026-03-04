@@ -32,7 +32,11 @@ const solutions = [
 
 const SolutionsSection = () => {
   return (
-    <section id="serviços" className="py-32 relative">
+    <section
+      id="serviços"
+      className="py-32 relative"
+      style={{ backgroundColor: "hsl(var(--section-light-bg))" }}
+    >
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +46,7 @@ const SolutionsSection = () => {
         >
           <h2
             className="font-heading text-4xl md:text-5xl font-bold italic tracking-wider"
-            style={{ color: "hsl(var(--text-heading))" }}
+            style={{ color: "hsl(var(--section-light-heading))" }}
           >
             Soluções calibradas para cada realidade
           </h2>
@@ -56,28 +60,45 @@ const SolutionsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="glass-card-hover rounded-xl p-10 relative overflow-hidden"
+              className="rounded-xl p-10 relative overflow-hidden transition-all duration-300 hover:shadow-lg"
+              style={{
+                backgroundColor: "hsl(var(--section-light-card-bg))",
+                border: "1px solid hsl(var(--cyan-glow) / 0.2)",
+                boxShadow: "0 2px 16px hsl(220 40% 8% / 0.06)",
+              }}
             >
               <div className="relative z-10 flex flex-col gap-5">
                 <div className="p-3 rounded-lg bg-primary/10 w-fit">
                   <item.icon className="text-primary" size={28} />
                 </div>
                 <div>
-                  <h3
-                    className="font-heading text-2xl font-semibold uppercase tracking-wide text-primary"
-                  >
+                  <h3 className="font-heading text-2xl font-semibold uppercase tracking-wide text-primary">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mt-1">{item.subtitle}</p>
+                  <p
+                    className="text-sm mt-1"
+                    style={{ color: "hsl(var(--section-light-muted))" }}
+                  >
+                    {item.subtitle}
+                  </p>
                 </div>
-                <p className="text-foreground leading-relaxed">{item.description}</p>
+                <p
+                  className="leading-relaxed"
+                  style={{ color: "hsl(var(--section-light-body))" }}
+                >
+                  {item.description}
+                </p>
                 <div>
                   <p className="text-primary font-medium tracking-widest uppercase text-xs mb-3">
                     O que entregamos:
                   </p>
                   <ul className="space-y-2">
                     {item.deliverables.map((d) => (
-                      <li key={d} className="text-foreground text-sm flex items-start gap-2">
+                      <li
+                        key={d}
+                        className="text-sm flex items-start gap-2"
+                        style={{ color: "hsl(var(--section-light-body))" }}
+                      >
                         <span className="text-primary mt-1">·</span>
                         {d}
                       </li>
