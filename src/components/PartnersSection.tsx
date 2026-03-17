@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import partnerUberall from "@/assets/partner-uberall.png";
+import partnerExid from "@/assets/partner-exid.png";
+import partnerId from "@/assets/partner-id.png";
 
-const partners = ["HubSpot", "Google Cloud", "Meta", "Segment", "Salesforce", "Braze"];
+const partners = [
+  { name: "Uberall", logo: partnerUberall },
+  { name: "ex.id", logo: partnerExid },
+  { name: "iD", logo: partnerId },
+];
 
 const PartnersSection = () => {
   const { t } = useTranslation();
@@ -33,22 +40,21 @@ const PartnersSection = () => {
           {t("partners.description")}
         </motion.p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-          {partners.map((name, i) => (
+        <div className="flex flex-wrap items-center justify-center gap-12 max-w-4xl mx-auto">
+          {partners.map((partner, i) => (
             <motion.div
-              key={name}
+              key={partner.name}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              className="flex items-center justify-center py-6 px-4 card-light rounded-xl"
+              transition={{ delay: i * 0.1 }}
+              className="flex items-center justify-center p-6"
             >
-              <span
-                className="font-heading text-xl md:text-2xl font-bold tracking-wide"
-                style={{ color: "hsl(var(--section-light-muted))" }}
-              >
-                {name}
-              </span>
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className="h-12 md:h-16 w-auto object-contain"
+              />
             </motion.div>
           ))}
         </div>
